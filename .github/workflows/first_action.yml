@@ -8,6 +8,8 @@ jobs:
         run: echo "Hi, this is the first step"
       - name: checkout Code
         uses: actions/checkout@v2
+      - name: install_pandas
+        run: pip install pandas
       - name: run_python
         run: python main.py
       - name: list items
