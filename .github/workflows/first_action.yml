@@ -1,0 +1,10 @@
+name: first_action
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first_step
+        run: echo "Hi, this is the first step"
+      - name: run_python
+        run: python main.py
