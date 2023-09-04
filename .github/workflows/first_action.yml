@@ -6,5 +6,9 @@ jobs:
     steps:
       - name: first_step
         run: echo "Hi, this is the first step"
+      - name: checkout Code
+        uses: actions/checkout@v2
       - name: run_python
         run: python main.py
+      - name: list items
+        run: ls -ll
