@@ -1,5 +1,14 @@
 name: first_action
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+
+  pull_request:
+    - types:
+      - opened
+  push:
+    branches:
+      # - main
+      - 'dev-*' 
 jobs:
   test:
     runs-on: ubuntu-latest
