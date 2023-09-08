@@ -6,7 +6,7 @@ on:
     types:
       - opened
     branches:
-      - main  # Trigger this workflow: when a PR is opened with main as target
+      - master  # Trigger this workflow: when a PR is opened with main as target
 
   push:
     branches:
