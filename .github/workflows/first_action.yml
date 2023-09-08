@@ -3,8 +3,11 @@ on:
   workflow_dispatch:
 
   pull_request:
-    - types:
+    types:
       - opened
+    branches:
+      - master  # Trigger this workflow: when a PR is opened with main as target
+
   push:
     branches:
       # - main
